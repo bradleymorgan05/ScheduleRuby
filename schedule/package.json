@@ -1,5 +1,5 @@
 {
-  "name": "shedule",
-  "private": true,
-  "dependencies": {}
+	"name": "schedule",
+	"private": true,
+	"dependencies": {}
 }
