@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_24_191416) do
+ActiveRecord::Schema.define(version: 2019_04_25_220624) do
 
   create_table "appointments", force: :cascade do |t|
-    t.decimal "start_time"
-    t.decimal "end_time"
+    t.integer "start_time"
+    t.integer "end_time"
     t.string "description"
     t.integer "schedule_id"
     t.datetime "created_at", null: false
