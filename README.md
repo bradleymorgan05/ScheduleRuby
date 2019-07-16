@@ -16,12 +16,13 @@ Schedules can be created, updated (by adding appointments), modified (only by re
 * Run migrations `rails db:migrate`
 
 ### Supported requests 
-  - **GET**:  
+  - **GET** Returns infortmation about schedules and appointments for the provided schedule ID (for schedules) or schedule ID and appointment ID (for appointments :  
       - `http://localhost:3000/schedules`
       - `http://localhost:3000/schedules/1`
       - `http://localhost:3000/schedules/1/appointments`
       - `http://localhost:3000/schedules/1/appointments/1`
-  - **POST**:
+  - **POST** Creates a schedule or an appointments based upon the request body:
+  
       supports requests (appointments) with JSON body in following format:
       
       ```"start_time":1, "end_time":3, "description":"some text"}```
@@ -32,7 +33,7 @@ Schedules can be created, updated (by adding appointments), modified (only by re
       
       - `http://localhost:3000/schedules`
       - `http://localhost:3000/schedules/1/appointments`
-  - **DELETE**:
+  - **DELETE** Deletes the schedule or appointment with provided schedule ID (for schedules) or schedule ID and appointment ID (for appointments):
       - `http://localhost:3000/schedules/1`
       - `http://localhost:3000/schedules/1/appointments/1`
   
