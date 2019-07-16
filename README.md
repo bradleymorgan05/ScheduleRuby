@@ -15,7 +15,7 @@ Schedules can be created, updated (by adding appointments), modified (only by re
 ### Run migrations
 * Run migrations `rails db:migrate`
 
-### Supported requests 
+## Supported requests 
   - **GET** Returns infortmation about schedules and appointments for the provided schedule ID (for schedules) or schedule ID and appointment ID (for appointments :  
       - `http://localhost:3000/schedules`
       - `http://localhost:3000/schedules/1`
